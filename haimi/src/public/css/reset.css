@@ -1,0 +1,85 @@
+*{padding: 0; margin: 0;box-sizing: border-box; color:#333;}
+ul, ol { list-style: none; }
+img{border: none; vertical-align: middle;}
+input,select{ vertical-align: middle;}
+
+header,nav,article,section,main,hgroup,figcaption,footer,aside,dialog,figure{ display: block;}
+html { font-family:"WEIRUANYAHEI", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+body { font-size: .14rem; line-height: 1.5; color: #000; background-color:#fff; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+ul,ol{list-style:none;}
+a { background: transparent; -webkit-tap-highlight-color:transparent; text-decoration: none; }
+a:active,a:hover{ outline:0;}
+body { -webkit-touch-callout: none; -webkit-user-select: none;-o-user-select: none; -moz-user-select: none;    -ms-user-select: none; user-select: none;}
+img,div,body,html,ul,li,a{ -webkit-touch-callout: none; }
+a:active,input,button{ background-color: transparent; -webkit-tap-highlight-color: transparent; border:0;outline:none;}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 0px;  
+    height: 0px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #555;  
+}  
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+
+.clear{
+    zoom:1;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
